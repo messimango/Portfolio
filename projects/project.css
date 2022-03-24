@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,200;1,300;1,600&family=Rubik:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav */
+nav {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{
+    font-family: 'Rubik';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+nav ul {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* dark/light modes */
+.modes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modes:hover {
+    color: darkgray;
+}
+
+
+/* home */
+
+
+
+
+/* projects */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    margin: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project {
+    background-color: whitesmoke;
+    box-shadow: black 5px 2.5px 12.5px;
+    width: 600px;
+    height: 600px;
+    border: 2px black solid;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project img {
+    width: 550px;
+    cursor: pointer;
+}
+
+.info {
+    padding: 25px;
+}
+
+/* skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+}
+
+.skills h1 {
+    margin-bottom: 150px;
+    font-family: 'Rubik';
+    font-size: 60px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.skill-box{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-logo i {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.score {
+    margin-left: 30px;
+}
+.score i {
+    font-size: 30px;
+    color: navy;
+    margin: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.fa-html5 {
+    color: #E44D26;
+}
+
+.fa-css3 {
+    color: #254BDD;
+}
+
+.fa-js-square {
+    color: #DDD519;
+}
+
+.fa-react {
+    color: #00D5F7;
+}
+
+.fa-node-js {
+    color: #8BBF3D;
+}
+
+.fa-wordpress {
+    color: #207196;
+}
+
+/* footer */
+footer {
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box {
+    border-radius: 25px;
+    width: 700px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info h2 {
+    margin: 5px;
+}
+
+.footer-icon {
+    margin-left: 8px;
+}
