@@ -2,7 +2,7 @@ const projects = [
     {
         id: 1,
         name: 'Momo Hut',
-        image: './images/game.png',
+        image: './images/momoHut.PNG',
         link: '',
         description: 'Resturant website with an interactive menu, and a fully functional checkout.',
     },
@@ -10,7 +10,7 @@ const projects = [
     {
         id: 2,
         name: 'Cottage',
-        image: './images/game.png',
+        image: './images/cottage.png',
         link: '',
         description: 'A website for private owners to rent out their cottage.',
     },
@@ -29,22 +29,6 @@ const projects = [
         image: './images/straw.png',
         link: 'https://rawcdn.githack.com/messimango/StrawHatPirates/129075a84fd3b3d0ee2357bb0ba132b92c74ef88/strawhats.html',
         description: 'A fan wiki website with an interactive menu and a countdown to the release of the next chapter',
-    },
-
-    {
-        id: 5,
-        name: 'Random Color Generator',
-        image: './images/game.png',
-        link: '',
-        description: 'Generates random colors to choose from',
-    },
-
-    {
-        id: 6,
-        name: 'Random Lyric Generator',
-        image: './images/game.png',
-        link: '',
-        description: 'Randomly generates lyrics to famous songs',
     },
 ];
 
@@ -68,5 +52,16 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+// Pronounce name
+
+var sound = new Audio('umang.mp3');
+
+
+function playSound() {
+    sound.play();
+    document.querySelector('.pronounce').classList.remove('hidden')
+    setTimeout(function() { document.querySelector('.pronounce').classList.add('hidden'); }, 4000);
+}
 
 

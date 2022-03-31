@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,200;1,300;1,600&family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Hurricane&family=Kanit:ital,wght@1,600&family=Poppins:ital,wght@0,400;0,800;1,200;1,300;1,600&family=Rubik:wght@600&display=swap');
 
 * {
     padding: 0;
@@ -65,9 +65,38 @@ nav ul li a{
 
 
 /* home */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    margin-top: -100px;
+}
 
+.myName{
+    font-size: 60px;
+    font-family: 'Kanit';
+    display: flex;
+    flex-direction: row;
+}
 
+.myName h4 {
+    font-size: 10px;
+    margin-left: 5px;
+    position: absolute;
+    
+}
 
+ .hidden {
+    display: none;
+}
+
+.myName a{
+    font-size: 10px;
+    color: blue;
+    cursor: pointer;
+}
 
 /* projects */
 
@@ -110,6 +139,11 @@ nav ul li a{
 
 .info {
     padding: 25px;
+}
+
+.moreprojects a {
+    text-decoration: none;
+    color: red;
 }
 
 /* skills */
