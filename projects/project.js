@@ -45,6 +45,45 @@ function displayProjects(projectsProject) {
     
     displayProjects = displayProjects.join('');
     projectContainer.innerHTML = displayProjects;
+
+    // dark mode
+
+    const toggleIcon = document.getElementById('toggle')
+    const toggleButton = document.querySelector('.modes')
+    const body = document.getElementById('body')
+    const nav = document.getElementById('nav')
+    const footer = document.getElementById('contact');
+    const project = document.querySelectorAll('.project');
+    const skills = document.querySelector('.skills-container')
+    
+
+    toggleButton.onclick = function() {
+        if (toggleIcon.classList.contains("fa-moon-o")) {
+            toggleIcon.className = "fa fa-sun-o";
+            body.className = 'dark';
+            nav.className = 'dark';
+            footer.className = 'dark';
+            project.forEach(element => {
+                element.style.backgroundColor = "grey";
+                element.style.color = 'white';
+            });
+            skills.style.backgroundColor = 'grey';
+            skills.style.color = 'white';
+            return
+        } else if (toggleIcon.classList.contains("fa-sun-o")) {
+            toggleIcon.className = "fa fa-moon-o";
+            body.className = '';
+            nav.className = '';
+            footer.className = '';
+            project.forEach(element => {
+                element.style.backgroundColor = "white";
+                element.style.color = 'black';
+            });
+            skills.style.backgroundColor = 'white';
+            skills.style.color = 'black';
+            return
+        }
+    }
 }
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -62,6 +101,25 @@ function playSound() {
     sound.play();
     document.querySelector('.pronounce').classList.remove('hidden')
     setTimeout(function() { document.querySelector('.pronounce').classList.add('hidden'); }, 4000);
+}
+
+
+// scroll button
+
+const scrollButton = document.querySelector('.scrollup')
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.onclick = function() {
+    document.documentElement.scrollTop = 0;
 }
 
 
