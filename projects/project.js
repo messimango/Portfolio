@@ -105,16 +105,18 @@ function playSound() {
 
 
 // scroll button
-
+const nav = document.getElementById('nav')
 const scrollButton = document.querySelector('.scrollup')
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.documentElement.scrollTop > 20) {
     scrollButton.style.display = "block";
+    nav.style.position = 'fixed';
   } else {
     scrollButton.style.display = "none";
+    nav.style.position = '';
   }
 }
 
