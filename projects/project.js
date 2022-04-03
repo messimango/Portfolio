@@ -54,7 +54,7 @@ function displayProjects(projectsProject) {
     const nav = document.getElementById('nav')
     const footer = document.getElementById('contact');
     const project = document.querySelectorAll('.project');
-    const skills = document.querySelector('.skills-container')
+    const skills = document.querySelector('.skill-box')
     
 
     toggleButton.onclick = function() {
@@ -111,7 +111,7 @@ const scrollButton = document.querySelector('.scrollup')
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop > 0) {
     scrollButton.style.display = "block";
     nav.style.position = 'fixed';
   } else {
@@ -123,5 +123,25 @@ function scrollFunction() {
 scrollButton.onclick = function() {
     document.documentElement.scrollTop = 0;
 }
+
+
+// toggle menu
+
+const menuToggle = document.querySelector('.toggle');
+const menuLinks = document.querySelector('.menu-links');
+
+menuToggle.addEventListener('click', function () {
+    menuLinks.classList.toggle('show-links');
+});
+
+const hyperlinks = document.querySelectorAll(".menu-links li a")
+
+hyperlinks.forEach(element => {
+    element.addEventListener('click', function () {
+        if (menuLinks.classList.contains('show-links')) {
+            menuLinks.classList.remove('show-links');
+        }
+    })
+});
 
 
