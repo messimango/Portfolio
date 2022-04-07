@@ -3,23 +3,23 @@ const projects = [
         id: 1,
         name: 'Momo Hut',
         image: './images/momoHut.PNG',
-        link: '',
-        description: 'Resturant website with an interactive menu, and a fully functional checkout.',
+        link: 'https://rawcdn.githack.com/messimango/MomoHut/1bf8064120ae48703183738a01983befdbb8ef04/MomoHut.html',
+        description: 'Resturant website with an interactive menu with a custom API. A reservation system that sends emails using backend code. A checkout system and dilevery fee calculator based on distance.',
     },
 
     {
         id: 2,
         name: 'Cottage',
         image: './images/cottage.png',
-        link: '',
-        description: 'A website for private owners to rent out their cottage.',
+        link: 'https://github.com/messimango/cottage',
+        description: 'A website for private owners to rent out their cottage. A booking system with backend that sends email and confirmation to owners. ',
     },
 
     {
         id: 3,
         name: 'Game Website',
         image: './images/game.png',
-        link: '',
+        link: 'https://rawcdn.githack.com/messimango/Game-website/fc573d86ad6075b49b40a97878e2f9637bdcf797/home.html',
         description: 'A game website with many games I created. The games include Momo clicker a idle clicker game as well as classics like Tetris, Pac-Man and Tic-Tac-Toe.',
     },
 
@@ -28,7 +28,7 @@ const projects = [
         name: 'Fan Wiki Website',
         image: './images/straw.png',
         link: 'https://rawcdn.githack.com/messimango/StrawHatPirates/129075a84fd3b3d0ee2357bb0ba132b92c74ef88/strawhats.html',
-        description: 'A fan wiki website with an interactive menu and a countdown to the release of the next chapter',
+        description: 'A fan wiki website with a countdown to the release of the next chapter.',
     },
 ];
 
@@ -113,10 +113,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.documentElement.scrollTop > 0) {
     scrollButton.style.display = "block";
-    nav.style.position = 'fixed';
   } else {
     scrollButton.style.display = "none";
-    nav.style.position = '';
   }
 }
 
