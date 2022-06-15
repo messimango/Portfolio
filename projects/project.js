@@ -1,6 +1,13 @@
 const projects = [
     {
         id: 1,
+        name: 'Expense Tracker',
+        image: 'image.png',
+        link: 'https://silly-smakager-70077e.netlify.app',
+        description: 'MERN app to track your expenses',
+    },
+    {
+        id: 2,
         name: 'Momo Hut',
         image: './images/momoHut.PNG',
         link: 'https://rawcdn.githack.com/messimango/MomoHut/1bf8064120ae48703183738a01983befdbb8ef04/MomoHut.html',
@@ -8,7 +15,7 @@ const projects = [
     },
 
     {
-        id: 2,
+        id: 3,
         name: 'Cottage',
         image: './images/cottage.png',
         link: 'https://github.com/messimango/cottage',
@@ -16,7 +23,7 @@ const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         name: 'Game Website',
         image: './images/game.png',
         link: 'https://rawcdn.githack.com/messimango/Game-website/fc573d86ad6075b49b40a97878e2f9637bdcf797/home.html',
@@ -24,14 +31,14 @@ const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         name: 'Fan Wiki Website',
         image: './images/straw.png',
         link: 'https://rawcdn.githack.com/messimango/StrawHatPirates/129075a84fd3b3d0ee2357bb0ba132b92c74ef88/strawhats.html',
         description: 'A fan wiki website with a countdown to the release of the next chapter.',
     },
 ];
-
+https://silly-smakager-70077e.netlify.app
 const projectContainer = document.querySelector('.projects');
 
 function displayProjects(projectsProject) {
