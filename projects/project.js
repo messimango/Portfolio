@@ -2,7 +2,7 @@ const projects = [
     {
         id: 1,
         name: 'Expense Tracker',
-        image: 'image.png',
+        image: './images/momoHut.PNG',
         link: 'https://silly-smakager-70077e.netlify.app',
         description: 'MERN app to track your expenses',
     },
@@ -38,7 +38,6 @@ const projects = [
         description: 'A fan wiki website with a countdown to the release of the next chapter.',
     },
 ];
-https://silly-smakager-70077e.netlify.app
 const projectContainer = document.querySelector('.projects');
 
 function displayProjects(projectsProject) {
