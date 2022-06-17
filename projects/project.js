@@ -1,13 +1,20 @@
 const projects = [
     {
         id: 1,
-        name: 'Expense Tracker',
-        image: './images/momoHut.PNG',
-        link: 'https://silly-smakager-70077e.netlify.app',
-        description: 'MERN app to track your expenses',
+        name: 'DogGram',
+        image: './images/doggram.png',
+        link: 'https://zingy-unicorn-ade846.netlify.app',
+        description: 'MERN app to to post picture of dogs',
     },
     {
         id: 2,
+        name: 'Airbnb Rating',
+        image: './images/Untitled.png',
+        link: 'https://cool-panda-3e94ca.netlify.app',
+        description: 'MERN app to that shows you ratings for Airbnb',
+    },
+    {
+        id: 3,
         name: 'Momo Hut',
         image: './images/momoHut.PNG',
         link: 'https://rawcdn.githack.com/messimango/MomoHut/1bf8064120ae48703183738a01983befdbb8ef04/MomoHut.html',
@@ -15,7 +22,7 @@ const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         name: 'Cottage',
         image: './images/cottage.png',
         link: 'https://github.com/messimango/cottage',
@@ -23,7 +30,7 @@ const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         name: 'Game Website',
         image: './images/game.png',
         link: 'https://rawcdn.githack.com/messimango/Game-website/fc573d86ad6075b49b40a97878e2f9637bdcf797/home.html',
@@ -31,7 +38,7 @@ const projects = [
     },
 
     {
-        id: 5,
+        id: 6,
         name: 'Fan Wiki Website',
         image: './images/straw.png',
         link: 'https://rawcdn.githack.com/messimango/StrawHatPirates/129075a84fd3b3d0ee2357bb0ba132b92c74ef88/strawhats.html',
